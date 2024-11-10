@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== FAV ICONS ==========-->
+    <link rel="icon" href="assets/img/yesplease2.png" sizes="32x32">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Yes Please Food & Drink</title>
+</head>
+
+<body>
+
+    <div id="preloader">
+    <img src="assets/img/yesplease2.png" alt="Yes Please Logo" id="loader">
+    </div>
+   
+    
+    
+    <!--End of Tawk.to Script-->
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#home" class="nav__logo">Yes Please Food & Drink</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link active-link">Ballina</a></li>
+                    <!-- <li class="nav__item"><a href="#about" class="nav__link">Rreth nesh</a></li> -->
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+            <div class="language-select">
+                <select id="languageSwitcher" onchange="updateFlag()">
+                    <option value="sq" data-flag="alb.png">Shqip</option>
+                    <option value="en" data-flag="eng.png">English</option>
+                </select>
+                <img id="flagImage" src="assets/img/Flag-Kosovo.png" alt="Flag" />
+            </div>
+            
+            
+            
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <!-- <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Yes Please</h1>
+                    <h2 class="home__subtitle">Provoni ushqimin më të mirë në qytet</h2>
+                    <a href="#menu" class="button">Shiko Menunë</a>
+                </div>
+
+                <img src="assets/img/yesplease3.jpg" alt="" class="home__img">
+            </div>
+        </section> -->
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <h2 class="section-title about__initial bounce ">Yes'Please Food & Drink – vendi ku shija dhe cilësia 
+                        takohen!</h2>
+                    <p class="about__description ">Çdo porosi përgatitet me përbërës të freskët për t'ju sjellë vetëm më të mirën.</p>
+                </div>
+
+                <img src="assets/img/yesplease3.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+
+
+        <!-- <script src="data.js"></script>
+        <div class="bd-container">
+            <select id="select-element"></select>
+            <br><br>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Emri</th>
+                        <th>Sasia</th>
+                        <th>Qmimi</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-body"></tbody>
+            </table>
+
+
+            <script>
+                
+                // Get the select element
+                var selectElement = document.getElementById("select-element");
+
+                // Populate the select element with the data
+                for (var key in data) {
+                    var option = document.createElement("option");
+                    option.value = key;
+                    option.text = key;
+                    selectElement.appendChild(option);
+                }
+
+                // Get the table body element
+                var tableBody = document.getElementById("data-table-body");
+
+                // Attach event listener to select element
+                selectElement.addEventListener("change", function () {
+                    // Get the selected option value
+                    var selectedOption = this.value;
+
+                    // Get the selected data
+                    var selectedData = data[selectedOption][0].kafe;
+
+                    // Generate table rows from the data
+                    var rows = selectedData.map(function (product) {
+                        return `<tr>
+      <td>${product.emri}</td>
+      <td>${product.sasia}</td>
+      <td>${product.qmimi}</td>
+</tr>`;
+                    });
+
+                    // Append the rows to the table body
+                    tableBody.innerHTML = rows.join('');
+                });
+
+            </script>
+        </div> -->
+
+        
+        
+        <!--========== MENU - Hamburger==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title  " style="color: 5e3f36">Hamburger</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Hamburger</h3>
+                    <span class="menu__detail">Pleskavic, Keçap<br> Majonez, Sallat</span>
+                    <br>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+                <div class="menu__content">
+                <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Cheese Burger</h3>
+                    <span class="menu__detail">Pleskavic, Kaçkavall <br> Keçap, Majonez <br> Sallat</span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Egg Burger</h3>
+                    <span class="menu__detail">Pleskavic, Vezë <br> Keçap, Majonez <br> Sallat</span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Double Burger</h3>
+                    <span class="menu__detail">2 Pleskavica, Keçap <br> Majonez, Sallat</span>
+                    <br>
+                    <span class="menu__preci">4.00 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Extra Burger</h3>
+                    <span class="menu__detail">Pleskavic, Kaçkavall <br> Vezë, Zdenkë <br> Sallat</span>
+                    <span class="menu__preci">4.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Yes'Please Burger</h3>
+                    <span class="menu__detail">Pleskavic, Kaçkavall <br> Përshut të fërguar, Vezë, Sallat</span>
+                    <span class="menu__preci">4.00 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Chicken Burger</h3>
+                    <span class="menu__detail">Mish Pule, Sallat <br> Keçap, Majonez</span>
+                    <br>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+            </div>
+        </section>
+
+           <!--========== MENU - Pleskavice ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title  " style="color: 5e3f36">Pleskavic</h2>
+
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                  <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Pleskavic e Madhe</h3>
+                    <span class="menu__detail">Sallat, Tarator <br> Sos djegës</span>
+                    <span class="menu__preci">4.50 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Pleskavice e Vogel</h3>
+                    <span class="menu__detail">Sallat, Tarator <br> Sos djegës</span>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Qebapa 10 copë</h3>
+                    <span class="menu__detail">Sallat, Tarator <br> Sos djegës</span>
+                    <br>
+                    <span class="menu__preci">6.00 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Qebapa 7 copë</h3>
+                    <span class="menu__detail">Sallat, Tarator <br> Sos djegës</span>
+                    <span class="menu__preci">4.20 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector.png" alt="" class="menu__img" > -->
+                    <h3 class="menu__name">Qebapa 5 copë</h3>
+                    <span class="menu__detail">Sallat, Tarator <br> Sos djegës</span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!--========== MENU - Dyner ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title " style="color: 5e3f36;">Dyner</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <!-- <img src="img/dyner2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Dyner në pjatë një porcion</h3>
+                    <span class="menu__detail">Dyner, Sallat <br> Tarator</span>
+                    <span class="menu__preci">4.50 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/dyner2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Dyner në pjatë gjysmë porcion</h3>
+                    <span class="menu__detail">Dyner, Sallat <br> Tarator</span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/dyner3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Dyner në Petë </h3>
+                    <span class="menu__detail">Dyner, Sallat <br> Tarator</span>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+            </div>
+        </section>
+
+        <!--========== MENU - Sandwiches ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title " style="color: 5e3f36;">Sandwiches</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <!-- <img src="img/vector2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Sandwich Përshutë</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br>Sallat</span>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Sandwich Pule</h3>
+                    <span class="menu__detail">Mish Pule, Sallat <br> Keçap, Majonez </span>
+                    <br>
+                    <span class="menu__preci">2.50€</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Sandwich me Vezë</h3>
+                    <span class="menu__detail">Vezë të fërguara, Kaçkavall <br> Keçap, Majonez <br> Sallat</span>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Sandwich me djathë të bardhë</h3>
+                    <br>
+                    <span class="menu__detail">Djath feta, Keçap <br> Majonez, Sallat </span>
+                    <br>
+                    <span class="menu__preci">2.50 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector2.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Sandwich Yes'Please </h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Zdenkë, Vezë <br> Sallat</span>
+                    <span class="menu__preci">3.50 €</span>
+                </div>
+            </div>
+        </section>
+
+        <!--========== MENU - Tost ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title " style="color: 5e3f36;" >Tost </h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <!-- <img src="img/vector3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Tost</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Keçap, Majonez </span>
+                    <br>
+                    <span class="menu__preci">1.50 €</span>
+                </div>
+                <div class="menu__content">
+                  <!-- <img src="img/vector3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Tost Extra</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Djath i fërguar, Origano </span>
+                    <span class="menu__preci">2.00 €</span>
+                </div>
+                <div class="menu__content">
+                   <!-- <img src="img/vector3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Tost me Zdenkë</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Zdenkë, Keçap <br> Majonez </span>
+                    <span class="menu__preci">2.00 €</span>
+                </div>
+                <div class="menu__content">
+                  <!-- <img src="img/vector3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Double Tost</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Djath i fërguar, Origano </span>
+                    <span class="menu__preci">4.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector3.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Tost me Sallat</h3>
+                    <span class="menu__detail">Përshutë, Kaçkavall <br> Djath i fërguar, Sallat </span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+            </div>
+        </section>
+
+        <!--========== MENU - Omlet ==========-->
+        <section class="menu section bd-container" id="menu">
+            <h2 class="section-title " style="color: 5e3f36;">Omlet</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <!-- <img src="img/vector5.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Omlet</h3>
+                    <span class="menu__detail">Vezë të fërguara <br> Sallat</span>
+                    <br>
+                    <span class="menu__preci">2.00 €</span>
+                </div>
+                <div class="menu__content">
+                    <!-- <img src="img/vector5.png" alt="" class="menu__img"> -->
+                    <h3 class="menu__name">Omlet Special</h3>
+                    <span class="menu__detail">Vezë të fërguara, Kaçkavall <br>Përshutë, Sallat</span>
+                    <span class="menu__preci">3.00 €</span>
+                </div>
+            </div>
+
+            <!--========== MENU - Krepat Embel ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Pallaqinka (Krep) të ëmbla</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella</h3>
+                        <br>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella keksa të bluara</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella keksa të bluara</h3>
+                        <span class="menu__detail">1 gotë qumësht</span>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella Extra</h3>
+                        <span class="menu__detail">Double Nutella</span>
+                        
+                        <span class="menu__preci">2.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella Banane</h3>
+                        <span class="menu__detail">Keksa të bluara <br> Shllag</span>
+                        
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella Kivi</h3>
+                        <span class="menu__detail">Keksa të bluara <br> Shllag</span>
+                        <br>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nutella Dredhëz</h3>
+                        <span class="menu__detail">Keksa të bluara <br> Shllag</span>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Reçel</h3>
+                        <span class="menu__detail">Vishnje ose Dredhëz</span>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Marmalladë</h3>
+                        
+                        <span class="menu__detail">Të përzier</span>
+                        
+                        <span class="menu__preci">1.50 €</span>   
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/vector6.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Yes Please</h3>
+                        <span class="menu__detail">Nutella, Pemë Sezonale <br> Keksa të bluara, Shllag</span>
+                        <span class="menu__preci">2.50 €</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU - Krepa te kripura ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Pallaqinka (krepa) të kripura</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/krep2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Djath të Bardhë</h3>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/krep2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Kaçkavall</h3>
+                        <br>
+                        <span class="menu__preci">2.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/krep2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Përshutë</h3>
+                    
+                        <span class="menu__detail">Përshutë, Djath <br> Kaçkavall, Origano</span>
+                        <span class="menu__preci">2.50 €</span>
+                    </div>
+                     <div class="menu__content">
+                        <!-- <img src="img/krep2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Krep me Djath të Përzier</h3>
+                        <span class="menu__detail">Djath i bardhë <br> Kaçkavall, Zdenk</span>
+                        
+                        <span class="menu__preci">2.50 €</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU - Sallatata ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Sallatat</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sallat pule</h3>
+                        <br>
+                        <span class="menu__preci">4.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sallat e Përzier</h3>
+                        <br>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat2.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sallat Shope</h3>
+                        <br>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/greek.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sallat Greke</h3>
+                        <br>
+                        <span class="menu__preci">3.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/tarator.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Xhaxhiki Tarator</h3>
+                        <br>
+                        <span class="menu__preci">2.00 €</span>
+                    </div>
+                </div>
+            </section>
+
+             <!--========== MENU - Pijet Freskuese ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Pijet Freskuese</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Coca Cola</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Fanta</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Schwepps</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Tonic</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sprite</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Ice Tea</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Sola</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Laqin</h3>
+                        <br>
+                        <span class="menu__preci">1.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Ujë Mineral</h3>
+                        <br>
+                        <span class="menu__preci">1.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Ujë i Thjeshtë</h3>
+                        <br>
+                        <span class="menu__preci">0.80 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Red Bull</h3>
+                        <br>
+                        <span class="menu__preci">3.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Ajran</h3>
+                        <br>
+                        <span class="menu__preci">0.30 €</span>
+                    </div>
+                </div>
+            </section>
+
+               <!--========== MENU - Lëngje të Pemëve ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Lëngje të Pemëve</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Juice</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Pjeshkë</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Dredhëz</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Mollë</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Vishnje</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+            </section>
+            
+                <!--========== MENU - Të Ngrohta ==========-->
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title " style="color: 5e3f36;">Të Ngrohta</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Espresso</h3>
+                        <br>
+                        <span class="menu__preci">0.80 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Makiato e vogël</h3>
+                        <br>
+                        <span class="menu__preci">0.80 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Makiato e Madhe</h3>
+                        <br>
+                        <span class="menu__preci">1.30 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Pa plum</h3>
+                        <br>
+                        <span class="menu__preci">1.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Kafe Turke</h3>
+                        <br>
+                        <span class="menu__preci">1.00 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Kafe Turke e Madhe</h3>
+                        <br>
+                        <span class="menu__preci">1.30 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Cappuchino</h3>
+                        <br>
+                        <span class="menu__preci">1.50 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Nes Caffe</h3>
+                        <br>
+                        <span class="menu__preci">1.20 €</span>
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Bambi</h3>
+                        <br>
+                        <span class="menu__preci">1.20 €</span>
+
+                    </div>
+                    <div class="menu__content">
+                        <!-- <img src="img/sallat.png" alt="" class="menu__img"> -->
+                        <h3 class="menu__name">Qajra të Ndryshme</h3>
+                        <br>
+                        <span class="menu__preci">0.80 €</span>
+
+                    </div>
+            </section>
+
+            
+
+            
+
+
+
+
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <hr>
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo" style="color: 5e3f36;">Yes'Please Food & Drink</a>
+
+                <div>
+                    <a href="https://www.facebook.com/yesplease.fooddrinks" target="_blank" class="footer__social" style="color: 5e3f36;"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/yesplease.fooddrink/" target="_blank" class="footer__social" style="color: 5e3f36;"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__titlee" style="color: 5e3f36;">Adresa</h3>
+                <ul class="footer__titlee">
+                    <li>
+                        <a href="https://maps.app.goo.gl/u8MspGRTKHFEXaay8" style="text-decoration: none; color: inherit;">
+                          Gjindemi Afër Urës Gurit përball Kino Lumbardhit
+                        </a>
+                    </li>
+                      
+                    <li style="color: 5e3f36;">+383 45262627</li>
+                </ul>
+            </div>
+        </div>
+      
+
+    </footer>
+    <footer>
+         <div class="footer2">&copy;<span id="year"> </span><span> Yes'Please Food & Drink. All rights reserved.</span></div>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 1000); // 1000 milliseconds = 1 second (duration of the fade out transition)
+            }, 2000); // 4000 milliseconds = 4 seconds
+        });
+    </script>
+ <script>
+    // Kap dropdown-in për zgjedhjen e gjuhës
+    const languageSwitcher = document.getElementById('languageSwitcher');
+
+    // Vendos një event listener për ndryshim të zgjedhjes
+    languageSwitcher.addEventListener('change', function() {
+        const selectedLanguage = languageSwitcher.value;
+
+        // Kontrollo gjuhën e zgjedhur dhe ridrejto në faqen përkatëse
+        if (selectedLanguage === 'en') {
+            window.location.href = 'index-en.html'; // Ridrejto në faqen anglisht
+        } else if (selectedLanguage === 'sq') {
+            window.location.href = 'index.html'; // Ridrejto në faqen shqip
+        }
+    });
+
+    // Vendos gjuhën e dropdown bazuar në faqen aktuale
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.pathname.includes('index-en.html')) {
+            languageSwitcher.value = 'en'; // Nëse je në anglisht
+        } else {
+            languageSwitcher.value = 'sq'; // Nëse je në shqip
+        }
+    });
+</script>
+
+</body>
+
+</html>
